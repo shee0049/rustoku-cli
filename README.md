@@ -3,7 +3,7 @@ A lightweight CLI remote application to control your roku using your terminal an
 
 This project was created for my own personal use and as an introduction to learning rust.  But feel free to send a [pull request](https://github.com/shee0049/rustoku-cli/pulls) if you would like to add anything.
 
-## Pre installation
+### Pre-installation
 
 Before running this application make sure to do a couple of things:
 
@@ -15,7 +15,7 @@ Before running this application make sure to do a couple of things:
 Clone this repository
 
 ```bash
-git clone https://github.com/shee0049/rustoku-cli/  && cd rustoku-cli
+git clone https://github.com/shee0049/rustoku-cli/ && cd rustoku-cli
 ``` 
 
 Edit the IP_ADDR constant in main.rs with your roku's IP address
