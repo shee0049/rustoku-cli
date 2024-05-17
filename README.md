@@ -1,5 +1,5 @@
 # rustoku-cli
-A lightweight CLI remote application to control your roku using your terminal and VIM keys!  Inspired by other similar tui applications, rustoku-cli uses the internal [External Control Protocol (ECP)](https://developer.roku.com/en-ca/docs/developer-program/dev-tools/external-control-api.md) provided by roku's API.  By sending empty post requests to certain URI's you can turn your computer into a remote!
+A lightweight CLI remote application to control your roku using your terminal and VIM keys!  Inspired by other similar tui applications, rustoku-cli uses the [External Control Protocol (ECP)](https://developer.roku.com/en-ca/docs/developer-program/dev-tools/external-control-api.md) provided by roku's API.  By sending empty POST requests to certain URI's you can turn your computer into a remote!
 
 This project was created for my own personal use and as an introduction to learning rust.  But feel free to send a [pull request](https://github.com/shee0049/rustoku-cli/pulls) if you would like to add anything.
 
@@ -26,4 +26,17 @@ run rustoku-cli
 cargo run
 ```
 
+### Create a binary
+
+Once you have ran the project, you can create a binary so you can run it directly from the command line
+
+```bash
+cargo build --release
+```
+
+this will create the binary file we just need to move it over to somewhere in your system $PATH
+
+```bash
+sudo cp ./target/release/rustoku-cli /usr/local/bin/
+```
 
